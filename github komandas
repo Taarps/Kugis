@@ -1,0 +1,18 @@
+git checkout develop
+git branch feature-kautkas
+git checkout feature-kautkas
+....
+daram darbu
+....
+git add visi jaunie faili
+git commit -a -m 'komentars'
+git push origin feature-kautkas
+git checkout develop
+git pull
+git checkout feature-kautkas
+git merge --no-ff develop
+git push origin feature-kautkas
+git checkout develop
+git merge --no-ff feature-kautkas
+git branch -d feature-kautkas
+git push origin develop
